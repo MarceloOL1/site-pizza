@@ -15,6 +15,8 @@
     margin: 0;
 }
 
+
+
 header{
     display: flex;
     justify-content: space-around;
@@ -45,6 +47,12 @@ li{
     border: 2px  outset var(--corTerceira);
 
 }
+body{
+    background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/07/10/dia-da-pizza-skkhweuqjcrq.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    
+}
 
 li:hover{
     border: 2px  inset var(--corTerceira);
@@ -57,4 +65,49 @@ margin:0 6px;
 
 img {    
     width: 16%;
+}
+
+.cardapio{
+    width: 700px;
+    margin: 100px auto;
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.708);
+    border: 10px inset var(--corPrincipal)
+
+}
+
+@media (max-width:764px) {
+    header{
+        display: block;
+        
+        background-color:var(--corPrincipal);
+        color: var(--corTexto);
+        
+    }
+    ul{
+        display: inline;
+        
+    }
+    
+    .pecaJa{
+        text-align: center;
+    }
+   
+    
+    img {    
+        width: 30%;
+    }
+    
+    .cardapio,.pizzaria{
+        width:300px;
+        margin: 100px auto;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.708);
+        border: 10px inset var(--corPrincipal)
+    
+    }  
+
+
 }
